@@ -35,6 +35,12 @@ h1 {
 
 }
 
+.betaTxt {
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
 .timer {
     color: #fc4b1a;
     font-size: 18px;

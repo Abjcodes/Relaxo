@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: #ffffff;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.feature {
+    width: 270px;
+    background-color: #F1F3F4;
+    border-radius: 6px;
+}
+
+.feature p {
+    color: #686868;
+    margin: 10px 10px 10px 10px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1 {
+    color: #EC615B;
+    font-weight: bolder;
+    font-size: 24px;
+    align-self: center;
+    background: -webkit-linear-gradient(#fc4a1a, #f75033);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.timer {
+    color: #fc4b1a;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.timer_text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1b1b1b;
+}
+
+.alertMsg {
+    color: #aaaaaa;
+}
+
+.selection {
+    /* Reset */
+    appearance: none;
+    background-color: #F1F3F4;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 20em;
+    height: 3em;
+    padding: 0 4em 0 1em;
+    color: black;
+    border-radius: 0.25em;
+    cursor: pointer;
+    /* <option> colors
+    option {
+      color: inherit;
+      background-color: #320a28;
+    }
+    /* Remove focus outline */
+    /* &:focus {
+      outline: none;
+    }
+    /* Remove IE arrow */
+    /* &::-ms-expand {
+      display: none;
+    } */ 
+}
+
+  button {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: #fc4b1ad0;
+    color: white;
+    font-family: inherit;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0px 14px 56px -11px #fc4b1ad0;
+    width: 150px;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+   }
+
+   
+
+/* footer {
+    margin-top: 40px;
+}
+a:link {
+    color: #F1F3F4;
+  } */

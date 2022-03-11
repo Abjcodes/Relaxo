@@ -6,6 +6,7 @@ const start = document.querySelector(".start_btn");
 const restart = document.querySelector(".restart_btn");
 const timerText = document.querySelector(".timer_text");
 const timerHeader = document.querySelector(".timer")
+const animation = document.querySelector(".request-loader")
 let timeLeft = 0;
 let counterKey = [];
 let sessionStatus = "inactive";
@@ -22,6 +23,8 @@ function startTimer(time) {
     if(sessionStatus != "inactive" && sessionStatus != "completed"){
         start.style.display = "none";
         timerVal.style.display = "none";
+        animation.style.display = "block";
+        
     }
 
     const countDown = setInterval(() => {
@@ -36,6 +39,7 @@ function startTimer(time) {
             sessionStatus = "completed";
             timerHeader.innerHTML = "You did great!!";
             restart.style.display = 'block';
+            animation.style.display = "none";
         }
     }, 1000)
     counterKey.push(countDown);
@@ -82,6 +86,7 @@ restart.addEventListener("click", () => {
 // Hiding restart button
 if(sessionStatus === "inactive" || sessionStatus === "active") {
     restart.style.display = 'none';
+    animation.style.display = "none";
 }
 // Start counter button
 start.addEventListener("click", () => {

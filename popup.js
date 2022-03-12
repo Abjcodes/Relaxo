@@ -94,6 +94,19 @@ start.addEventListener("click", () => {
     timerHeader.innerHTML = "Sit back and Relax";
     startTimer(timeLeft);
 });
+
+
+// chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
+// });
+
+// chrome.runtime.onMessage.addListener(
+//     function(request, sender, sendResponse) {
+//         if (request.msg === "something_completed") {
+//             onMove;
+//         }
+//     }
+// );
+
 });
 
 
